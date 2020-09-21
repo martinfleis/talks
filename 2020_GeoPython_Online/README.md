@@ -23,3 +23,7 @@ The procedures could be robust enough to accommodate different levels of detail 
 ## Slides
 
 Slides are generated from Jupyter notebook using [RISE extension](https://rise.readthedocs.io/en/stable/index.html). Folder also includes custom CSS and fonts based on [Tufte CSS](https://github.com/edwardtufte/tufte-css).
+
+## Environment
+
+If you have an issue with the generating environment to sucessfully run the notebook, use docker: `docker pull darribas/gds_py:5.0`. See the details [here](https://darribas.org/gds_env/stacks/gds_py/).
