@@ -397,6 +397,12 @@ data-background-size="contain"}
 
 <span class="pie">Singapore | Dar es Salaam</span>
 
+## Great Britain
+
+## {data-transition="none" data-background-image="../fig/sp_sig/signatures_scottish_belt.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/sp_sig/signatures_scottish_belt_rural.png" data-background-size="cover"}
+## {data-transition="none" data-background-image="../fig/sp_sig/signatures_scottish_belt_urban.png" data-background-size="cover"}
+
 #
 ## Reproducible open science
 
