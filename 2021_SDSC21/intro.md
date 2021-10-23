@@ -1,23 +1,9 @@
-# *Capturing the Structure of Cities with Data Science*
-
-
-<table>
-    <col width="100%">
-    <tr>
-        <td>
-            <CENTER>
-                <a href="https://martinfleischmann.net/"><b>Martin Fleischmann</b></a>
-            </CENTER>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <CENTER>
-                <a href="https://twitter.com/martinfleis">[`@martinfleis`]</b></a>
-            </CENTER>
-        </td>
-    </tr>
-</table>
+# Martin Fleischmann
+<CENTER>
+    <a href="https://martinfleischmann.net/">martinfleischmann.net</a>
+    <br>
+    <a href="https://twitter.com/martinfleis">@martinfleis</b></a>
+</CENTER>
 
 <table>
     <col width="50%">
