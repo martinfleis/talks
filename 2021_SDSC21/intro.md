@@ -1,8 +1,5 @@
-# *Spatial Signatures*
+# *Capturing the Structure of Cities with Data Science*
 
-<CENTER>
-    *Capturing the Structure of Cities with Data Science*
-</CENTER>
 
 <table>
     <col width="100%">
@@ -261,15 +258,14 @@
 
 ## Tools
 <table>
-    <col width="25%">
-    <col width="25%">
-    <col width="25%">
-    <col width="25%">
+    <col width="33%">
+    <col width="33%">
+    <col width="33%">
     <tr>
         <td>
             <CENTER>
                 <span class='fragment'>
-                    OSMnx
+                    GeoPandas
                 </span>
             </CENTER>
         </td>
@@ -283,19 +279,40 @@
         <td>
             <CENTER>
                 <span class='fragment'>
-                    foot
-                </span>
-            </CENTER>
-        </td>
-        <td>
-            <CENTER>
-                <span class='fragment'>
                     momepy
                 </span>
             </CENTER>
         </td>
     </tr>
 </table>
+
+## GeoPandas
+
+<CENTER>
+    <span class='fragment' style='color:#3b6e8c'>
+        GeoPandas is an open source project to add support for geographic data to pandas objects.
+    </span>
+</CENTER>
+<br />
+<CENTER>
+    <span class='fragment'>
+        <a href="https://geopandas.org">geopandas.org</a>
+    </span>
+</CENTER>
+
+## PySAL
+
+<CENTER>
+    <span class='fragment' style='color:#3b6e8c'>
+        Python Spatial Analysis Library
+    </span>
+</CENTER>
+<br />
+<CENTER>
+    <span class='fragment'>
+        <a href="https://pysal.org">pysal.org</a>
+    </span>
+</CENTER>
 
 ## momepy
 
@@ -309,6 +326,15 @@ Member of a PySAL family
 </CENTER>
 <CENTER>
     <span class='fragment'>
-        <a href="https://momepy.org">momepy.org</a> & <a href="https://pysal.org">pysal.org</a>
+        <a href="https://momepy.org">momepy.org</a>
+    </span>
+</CENTER>
+
+#
+## Outline
+
+<CENTER>
+    <span class='fragment'>
+        <img src="fig/workflow.png" style="width:100%;vertical-align:middle;box-shadow:none">
     </span>
 </CENTER>
