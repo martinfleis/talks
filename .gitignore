@@ -128,3 +128,5 @@ dmypy.json
 .pyre/
 
 .DS_Store
+2023_GeoPython/demography.joblib.compressed
+2023_GeoPython/demography.pickle

@@ -1,0 +1,41 @@
+.reveal pre.xr-text-repr-fallback {
+    display: none;
+}
+
+.reveal .xr-wrap {
+    max-width: 90%;
+}
+
+.reveal li.xr-var-item {
+    display: grid;
+    grid-template-columns: 150px auto auto 1fr 20px 20px;
+}
+
+.reveal ul.xr-var-list {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'iA Writer Quattro V', Courier, monospace!important;
+}
+
+h1 {
+    font-family: 'iA Writer Quattro V', Courier, monospace!important;
+}
+
+h2 {
+    font-family: 'iA Writer Quattro V', Courier, monospace!important;
+}
+
+h3 {
+    font-family: 'iA Writer Quattro V', Courier, monospace!important;
+}
+
+h4 {
+    font-family: 'iA Writer Quattro V', Courier, monospace!important;
+}
+
+p {
+    font-family: 'iA Writer Quattro V', Courier, monospace!important;
+}
