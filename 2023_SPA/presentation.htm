@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="@@base@@" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+    <link rel="stylesheet" href="engine/main.css" />
+    <link rel="stylesheet" href="theme/zurich.css" />
+    <link rel="stylesheet" href="engine/katex/katex.min.css" />
+    <!--<link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />-->
+    <style>
+    :root{
+--logo: /assets/pr-if_znak_pr-if_red_rgb_pos_en.jpg;
+--darkaccent1color: #000;
+--lightaccent1color: #FFF;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #FFF;
+--darktitletextcolor: #000;
+--lightbodytextcolor: #FFF;
+--darkbodytextcolor: #000;
+--lightbackgroundcolor: #FFF;
+--darkbackgroundcolor: #000;
+--bodyfont: Helvetica;
+--titlefont: ia writer quattro v;
+} 
+
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="engine/print.css"
+      media="print"
+    />
+  </head>
+
+  <body class="responsive">
+    <div class="reveal">
+      <div class="slides"><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="datascienceaaipročteníměsta">Data Science a AI pro čtení města</h1>
+
+<h1 id="martinfleischmannmartinfleis"><em>Martin Fleischmann</em> (@martinfleis)</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light title-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="kdojsem">Kdo jsem?</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="architekt">Architekt</h1>
+
+<h4 id="faČvut">FA ČVUT</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="urbandesigner">Urban Designer</h1>
+
+<h4 id="universityofstrathclyde">University of Strathclyde</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="urbánnígeograf">Urbánní geograf</h1>
+
+<h4 id="universityofstrathclyde">University of Strathclyde</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="datovýurbánnígeograf">Datový urbánní geograf</h1>
+
+<h4 id="universityofliverpool">University of Liverpool</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="datovýurbánnígeograf">Datový urbánní geograf</h1>
+
+<h4 id="univerzitakarlova">Univerzita Karlova</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="thealanturinginstitute">The Alan Turing Institute</h1>
+
+<h4 id="theuksnationalinstituteforaianddatascience.">The UK's national institute for AI and data science.</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light title-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="cojedatascienceacojeai">Co je data science a co je AI?</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Screenshot%202023-05-09%20at%2014.37.46.png.public.png" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light title-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="vícestatistikanežai">Více statistika než AI</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footnotes has-footer light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="odkatastrukestruktuřefleischmannm.feliciottia.romiceo.andportas.‘methodologicalfoundationofanumericaltaxonomyofurbanform.’environmentandplanningb:urbananalyticsandcityscience4941283-1299.doi:10.117723998083211059835">Od katastru ke struktuře<sup><a href="#fn1" id="fnr1" title="see footnote" class="footnote">1</a></sup></h1></div>
+        <img src="images/Screenshot%202023-02-13%20at%2014.25.47.png.public.png" class=" position-left-center" style="">
+      </div>
+      <div class="footnotes">
+<ol>
+
+<li id="fn1">
+<p>Fleischmann, M., Feliciotti, A., Romice, O. and Porta, S. ‘Methodological Foundation of a Numerical Taxonomy of Urban Form.’ Environment and Planning B: Urban Analytics and City Science 49 (4), 1283-1299. doi:10.1177/23998083211059835 <a href="#fnr1" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+</ol>
+</div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="parcela">Parcela</h1>
+
+<h1 id="budova">Budova</h1>
+
+<h1 id="uličnísíť">Uliční síť</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Screenshot%202023-04-25%20at%2014.16.03.png.public.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="morphologicaltessellation">Morphological Tessellation</h2></div>
+        <img src="images/Clipboard.png" class=" size-contain position-center-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_1.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id=""></h2>
+
+<div class="single-image-wrapper"><img src="images/Clipboard_17.png" class=" size-contain position-center-center"></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Screenshot%202023-04-25%20at%2014.29.15.png.public.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="296měřitelnýchatributů">296 měřitelných atributů</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.625rem;">
+        <div style=""><h2 id="martinfleis.github.ionumerical-taxonomy-maps"><a href="https://martinfleis.github.io/numerical-taxonomy-maps">martinfleis.github.io/numerical-taxonomy-maps</a></h2></div>
+        <img src="images/Screenshot%202023-02-13%20at%2014.25.47.png.public.png" class=" position-left-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.297rem;">
+        <div style=""><h2 id="storymaps.arcgis.comstories12bf3e7625cd45519200eac7aa09916e"><a href="https://storymaps.arcgis.com/stories/12bf3e7625cd45519200eac7aa09916e">storymaps.arcgis.com/stories/12bf3e7625cd45519200eac7aa09916e</a></h2></div>
+        <img src="images/Screenshot%202023-05-09%20at%2014.47.42.png.public.png" class=" position-left-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footnotes has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="odleteckéhosnímkupřesbudovykestruktuřewangj.fleischmannm.venerandia.romiceo.kufferm.andportas.‘eomorphometrics:understandingcitiesthroughurbanmorphologyatlargescale’landscapeandurbanplanning233.doi:10.1016j.landurbplan.2023.104691">Od leteckého snímku přes budovy ke struktuře<sup><a href="#fn1" id="fnr1" title="see footnote" class="footnote">1</a></sup></h1></div>
+      </div>
+      <div class="footnotes">
+<ol>
+
+<li id="fn1">
+<p>Wang, J., Fleischmann, M., Venerandi, A., Romice, O., Kuffer, M., and Porta, S. ‘EO + Morphometrics: Understanding cities through urban morphology at large scale’ Landscape and Urban Planning, 233. doi:10.1016/j.landurbplan.2023.104691 <a href="#fnr1" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+</ol>
+</div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/1-s2.0-S0169204623000105-gr3_lrg.jpg.jpeg" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/1-s2.0-S0169204623000105-gr4_lrg.jpg.jpeg" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_19.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_20.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_21.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_22.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_23.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_24.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_25.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_26.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_27.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/1-s2.0-S0169204623000105-gr9_lrg.jpg.jpeg" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/1-s2.0-S0169204623000105-gr10_lrg.jpg.jpeg" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footnotes has-footer light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="odsatelitníhosnímkukestruktuřesingletona.arribas-beld.murrayj.andfleischmannm.‘estimatinggeneralizedmeasuresoflocalneighbourhoodcontextfrommultispectralsatelliteimagesusingaconvolutionalneuralnetwork.’computersenvironmentandurbansystems95101802.doi:10.1016j.compenvurbsys.2022.101802">Od satelitního snímku ke struktuře<sup><a href="#fn1" id="fnr1" title="see footnote" class="footnote">1</a></sup></h1></div>
+        <img src="images/Screenshot%202023-04-25%20at%2015.15.49.png.public.png" class=" position-left-center" style="">
+      </div>
+      <div class="footnotes">
+<ol>
+
+<li id="fn1">
+<p>Singleton, A., Arribas-Bel, D., Murray, J., and Fleischmann, M. ‘Estimating generalized measures of local neighbourhood context from multispectral satellite images using a convolutional neural network.’ Computers, Environment and Urban Systems, 95, 101802. doi:10.1016/j.compenvurbsys.2022.101802 <a href="#fnr1" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+</ol>
+</div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/hires.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/s2.png" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id=""></h2>
+
+<div class="single-image-wrapper"><img src="images/1-s2.0-S0198971522000461-gr12_lrg.jpg.jpeg" class=" size-contain position-center-center"></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/1-s2.0-S0198971522000461-gr4_lrg.jpg.jpeg" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light v-split-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.391rem;">
+        <div style=""><h2 id="https:studio.foursquare.compublicc40f0a5b-a1f8-48af-8b7d-7c258942cf0d"><a href="https://studio.foursquare.com/public/c40f0a5b-a1f8-48af-8b7d-7c258942cf0d">https://studio.foursquare.com/public/c40f0a5b-a1f8-48af-8b7d-7c258942cf0d</a></h2></div>
+        <img src="images/Screenshot%202023-04-25%20at%2015.15.49.png.public.png" class=" position-left-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="pokudmámekatastrálnídataumímebýtpřesní">Pokud máme katastrální data, umíme být přesní</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="pokudmámesnímkymůžemesepřiblížitrealitě">Pokud máme snímky, můžeme se přiblížit realitě</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="buďpoužijemeaiprodetekcibudov">Buď použijeme AI pro detekci budov</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="nebojinechámečíststrukturupřímo">Nebo ji necháme číst strukturu přímo</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="pokaždévšakummjentenjedenúkol.">Pokaždé však umm jen ten jeden úkol.</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="jetotedyai">Je to tedy AI?</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="martinfleischmannmartinfleis"><em>Martin Fleischmann</em> (@martinfleis)</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"><img class="logo" src="images/pr-if_znak_pr-if_red_rgb_pos_en.jpg"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section></div>
+    </div>
+    <script src="engine/index.js"></script>
+    <!--<script src="engine/d3v4.min.js" charset="utf-8"></script>
+    <script src="engine/charts.min.js" charset="utf-8"></script>
+    <script src="engine/billboard.min.js"></script>-->
+    <script src="engine/pptxgen.min.js"></script>
+                                                   <script src="engine/pfill.js"></script>
+    <script src="engine/published.js"></script>
+
+    <script>
+      Reveal.configure({
+        progress: true,
+        keyboard: true,
+        dependencies: [
+          {
+            src: "engine/highlight.js",
+            sync: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
