@@ -1,0 +1,189 @@
+---
+title: "Segregated by design"
+subtitle: "Eli Knaap and Serge Rey"
+# author: "Martin Fleischmann"
+# institute: "Charles University"
+# date: 2024-09-12
+format:
+    revealjs:
+        theme: [default, ../assets/reveal.scss]
+        logo: ../assets/icon.svg
+        menu: false
+        transition: slide
+        navigation-mode: linear
+        controls-layout: edges
+        progress: true
+        include-in-header: ../assets/font.html
+        incremental: true
+        title-slide-attributes:
+            data-background-image: ../assets/full_logo.svg
+            data-background-size: 20%
+            data-background-position: 50% 90%
+---
+
+> [...] scientists from many disciplines often fail to realize how simplified the assumption of Euclidean distance is when traversing the built or natural environment.
+
+::: {.fragment}
+> [...] the behavioral realities of movement and social interaction in complex urban environments often require a more thoughtful model.
+:::
+
+---
+
+> Classically, segregation indices are calculated based on areal groupings (e.g., counties or census tracts) [with more recent research exploring ways that spatial relationships can enter the equation.]{.fragment}
+
+::: {.fragment}
+> Spatial segregation measures embody the notion that proximity to one’s neighbors is a better
+specification of residential segregation than simply who resides together inside the same arbitrarily
+drawn polygon.
+:::
+
+---
+
+> we examine the relationship between pedestrian network characteristics and the
+measurement of metropolitan segregation
+
+---
+
+### Research questions
+
+1. How much does the operationalization of space matter for segregation measurement?
+2. If differences exist between Euclidean and network measures, are they
+large enough that they cannot be attributed to chance?
+3. What characteristics of the travel
+network are related to the observed difference in measurement?
+
+---
+
+![](fig1.png){.r-stretch}
+
+---
+
+### The spatial information theory index $\widetilde{H}$ as a measure of segregation
+
+> the index $\widetilde{H}$ is a measure of how much less diverse individuals’ local environments are, on average, than is the total population of region
+
+>reaches its maximum of 1 only when“each individual’s local
+environment is monoracial.”
+
+---
+
+> [...] we index locations as $i$ and $j$, and we operationalize the concept of spatial relationships
+using a spatial weights matrix $W$.
+
+::: {.fragment}
+> By focusing on W, we are forced“to specify
+[our] underlying assumptions about socio-spatial proximity,”
+:::
+
+::: {.fragment}
+> Conceptually, the spatial weights matrix $W$ reflects the
+connectivity graph for the spatial relationship between nodes $i$ and $j$, and the values $w_{ij}$ encode the
+intensity of the association $\overline{ij}$.
+:::
+
+---
+
+>  The local environment for a given feature y at location i can then
+be measured by its spatial lag, SL, defined as
+
+$$
+SL_i = \sum_j w_{ij} y_j
+$$
+
+---
+
+> four mutually exclusive racial groups (non-Hispanic white, non-Hispanic Black, Hispanic, and
+Asian)
+
+> 380 metropolitan Core-Based Statistical Areas (CBSAs) in the
+United States
+
+---
+
+> To compute Euclidean-based spatial segregation measures, our distances are
+measured between block group centroids;
+
+::: {.fragment}
+> to compute network-based spatial segregation measures,
+we first attach the block group centroids to the nearest intersection in the travel network, then
+compute the shortest network-based path between each pair of observations.
+:::
+
+---
+
+> two different
+spatial weights matrices by varying the way distance is measured
+
+::: {.fragment}
+> the proximity-weighting function $\phi$ is a simple linear decay (triangular kernel) encoding a
+spatial weight that decreases with distance up to a threshold of 2 km
+
+$$
+\phi =
+\begin{cases}
+1 - \left(\frac{d_{ij}}{r}\right), & \text{if } d_{ij} \leq r, \\
+0, & \text{otherwise}.
+\end{cases}
+$$
+:::
+
+---
+
+> two“spatialized” versions of the metropolitan demographic composition are
+created, with one dataset representing Euclidean distances and the other representing network-based
+distances
+
+::: {.fragment}
+> two synthetic datasets by pooling the input units from both original datasets and
+reassigning them at random
+
+test of significance
+:::
+
+---
+
+> [...] the Pearson correlation between planar and network-based segregation measures is $\rho=
+0.987$
+
+::: {.fragment}
+> the rank correlation between the
+two measures is considerably lower at $\tau = 0.90$
+:::
+
+---
+
+![](fig2.png){.r-stretch}
+
+---
+
+> [...] 25.3% have a difference between Euclidean and
+network-based segregation measures that is significant at the $α = 0.05$ level, and 14.2% of the
+CBSAs are significant at the $α = 0.01$ level.
+
+::: {.fragment}
+> [...] the network-based
+segregation measure approximately 20% higher than the Euclidean-based measure on average.
+:::
+
+---
+
+![](tab2.png){.r-stretch}
+
+---
+
+![](fig4.png){.r-stretch}
+
+---
+
+![](tab3.png){.r-stretch}
+
+---
+
+### Writing
+
+- Methods and results presented together based on topics (metric difference / network structure).
+
+- peaks to the audicence - could be significantly more technical but the field is not used
+to complex spatial modelling.
+
+- Visuals supporting the narrative, not necessarily showing the reusults only.

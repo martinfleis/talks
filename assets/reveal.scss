@@ -1,0 +1,74 @@
+/*-- scss:defaults --*/
+// colors
+$body-color: #003E5B !default;
+$body-bg: #fff !default;
+$presentation-heading-color: #000000 !default;
+$link-color: #C51D48 !default;
+$selection-bg: #003E5B !default;
+$code-block-border-color: "white" !default;
+$code-color: #C51D48 !default;
+
+// typography
+$font-family-sans-serif: "Merriweather", serif !default;
+$presentation-font-size-root: 40px !default;
+$font-family-monospace: "Source Code Pro", monospace !default;
+
+// headings
+
+// layout
+$presentation-slide-text-align: left;
+
+/*-- scss:rules --*/
+
+.reveal p {
+    font-weight: 600;
+}
+
+.reveal h2,
+.reveal h3 {
+    padding-top: 10%;
+}
+
+.reveal h2,
+.reveal h3 {
+    padding-bottom: 3%;
+}
+
+.reveal .r-fit-text {
+    color: #C51D48;
+}
+
+.reveal .center_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reveal blockquote {
+    color: #C51D48;
+    border-left: .25rem solid #C51D48;
+}
+
+.reveal h1::after, .reveal h2::after, .reveal h3::after {
+    content: ".";
+    color: #C51D48;
+}
+
+.reveal .question h1::after, .reveal .question h2::after, .reveal .question h3::after {
+    content: "?";
+    color: #C51D48;
+}
+
+.reveal .no-text h1::after, .reveal .no-text h2::after, .reveal .no-text h3::after {
+    content: "";
+}
+
+.reveal .slide aside {
+    color: rgb(78, 81, 87);
+    background-color: rgba($color: #fff, $alpha: 0.75);
+    font-size: 0.4em;
+}
+
+.reveal p {
+    font-weight: 400;
+}
